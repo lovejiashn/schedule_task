@@ -1,0 +1,18 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /task
+spring:
+  datasource:
+    url: jdbc:mysql://172.18.21.167:3306/xmjg_agcloud_1104?characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: xmjg_agcloud
+    password: xmjg_agcloud
+    hikari:
+      auto-commit: true
+      connection-timeout: 20000
+      minimum-idle: 5
+      maximum-pool-size: 20
+      idle-timeout: 30000
+      max-lifetime: 1200000
+
